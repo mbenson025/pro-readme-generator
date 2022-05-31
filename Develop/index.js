@@ -1,16 +1,20 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const readme = 'readme.txt';
+let readme = 'readme.txt';
 
 const questions = [
-  //objects-- question-type:input(or choices?), name: string, message: 'question here'
-  //inquirer npm- "Take type, name, message[, default, filter, validate, transformer] properties."
   {
     type: 'input',
     name: 'username',
     message: 'What is your GitHub username?',
-    //validate:
+    validate: (answer) => {
+      if (answer === '') {
+        return console.error('wow really?');
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
