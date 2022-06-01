@@ -7,6 +7,7 @@
 - [Usage](#usage)
 - [Contributing-Guidelines](#contributing-guidelines)
 - [Tests](#tests)
+- [License](#license)
 
 ## Description
 
@@ -19,3 +20,5 @@ This application prompts the user with a series of questions in order to generat
 ## Contributing Guidelines
 
 ## Tests
+
+## License

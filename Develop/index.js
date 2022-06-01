@@ -10,7 +10,7 @@ const questions = [
     message: 'What is your GitHub username?',
     validate: (answer) => {
       if (answer === '') {
-        return console.error('wow really?');
+        return console.error('Username not valid');
       } else {
         return true;
       }
