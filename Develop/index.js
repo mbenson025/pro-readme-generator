@@ -62,7 +62,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Choose a license',
-    choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC'],
+    choices: ['MIT', 'GPLv3', 'Apache-2.0', 'ISC'],
   },
   {
     type: 'input',
@@ -77,7 +77,6 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, answers) {
   markDown = generateMarkdown(answers);
   fs.writeFile(fileName, markDown, (err) => {
@@ -89,7 +88,7 @@ function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      console.log(answers);
+      // console.log(answers);
       writeToFile(fileName, answers);
     })
     .catch((error) => {

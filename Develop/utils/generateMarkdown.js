@@ -1,9 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (answers.license === MIT) {
-    const badge = `![GitHub](https://img.shields.io/github/${answers.license}/${answers.username}/${answers.title})`;
-  }
+
+function renderLicenseBadge() {
+  // if (answers.license === MIT) {
+  //   `![license-badge](https://img.shields.io/badge/license-MIT-blue)`;
+  // }
+  // if (answers.license === Apache) {
+  //   `![license-badge](https://img.shields.io/badge/license-Apache--2.0-green)`;
+  // }
 }
 
 // TODO: Create a function that returns the license link
@@ -15,9 +19,9 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 function generateMarkdown(answers) {
+  renderLicenseLink();
   return `# ${answers.title} 
-
-  ![GitHub](https://img.shields.io/github/license/${answers.username}/${answers.title})
+  ![license-badge](https://img.shields.io/badge/license-${answers.license}-blue);
 
   ## Table of Contents
   - [Description](#description)
@@ -44,11 +48,15 @@ function generateMarkdown(answers) {
   ${answers.tests}
 
   ## License
-  ${answers.license}
+  ${answers.license} License
+
+  Copyright (c) 2022 ${answers.username}
+
+  Licensed under the [${answers.license}](LICENSE) license.
 
   ## Contact
-  GitHub Profile - https://github.com/${answers.username}
-  Email - ${answers.email}
+ * GitHub Profile - https://github.com/${answers.username}
+ * Email - ${answers.email}
   
 
 `;

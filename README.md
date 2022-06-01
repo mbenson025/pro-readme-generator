@@ -1,5 +1,9 @@
 # Pro README.md Generator
 
+![GitHub](https://img.shields.io/github/license/mbenson025/pro-readme-generator) |
+![GitHub language count](https://img.shields.io/github/languages/count/mbenson025/pro-readme-generator) |
+![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/pro-readme-generator) |
+
 ## Table of Contents
 
 - [Description](#description)
@@ -15,6 +19,8 @@ This application prompts the user with a series of questions in order to generat
 
 ## Installation
 
+Clone Github repo to device. Install node.js and download the inquirer package dependency.
+
 ## Usage
 
 ## Contributing Guidelines
@@ -22,3 +28,9 @@ This application prompts the user with a series of questions in order to generat
 ## Tests
 
 ## License
+
+MIT License
+
+Copyright (c) 2022 Mason Benson
+
+Licensed under the [MIT](LICENSE) license.
