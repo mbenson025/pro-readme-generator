@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-let readme = 'readme.txt';
+let fileName = 'README.md';
 
 const questions = [
   {
@@ -20,66 +20,77 @@ const questions = [
     type: 'input',
     name: 'email',
     message: 'What is your email?',
-    //validate:
+    validate: (answer) => {
+      if (answer === '') {
+        return console.error('Email is not valid');
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'title',
     message: 'What is your project title?',
-    default: 'title123',
-    //validate:
+    validate: (answer) => {
+      if (answer === '') {
+        return console.error('Title is required');
+      } else {
+        return true;
+      }
+    },
   },
   {
     type: 'input',
     name: 'description',
     message: 'Provide a description for your project',
     default: 'description tbd',
-    //validate:
   },
   {
     type: 'input',
     name: 'installation',
     message: 'List the steps required to install your application',
     default: 'installation process tbd',
-    //validate:
   },
   {
     type: 'input',
     name: 'usage',
     message: 'How is your app used? Provide instructions',
     default: 'Usage instructions tbd',
-    //validate:
   },
   {
     type: 'list',
     name: 'license',
     message: 'Choose a license',
     choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC'],
-    //validate:
   },
   {
     type: 'input',
     name: 'contributing',
     message: 'How can others contribute to your project?',
-    //validate:
   },
   {
     type: 'input',
     name: 'tests',
     message:
       'If applicable, describe tests you have run on this project so far',
-    //validate:
   },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, answers) {
+  markDown = generateMarkdown(answers);
+  fs.writeFile(fileName, markDown, (err) => {
+    err ? console.error(err) : console.log('readme generated');
+  });
+}
 
 function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
       console.log(answers);
+      writeToFile(fileName, answers);
     })
     .catch((error) => {
       if (error.isTtyError) {
