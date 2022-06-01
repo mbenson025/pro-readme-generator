@@ -94,7 +94,7 @@ function init() {
     })
     .catch((error) => {
       if (error.isTtyError) {
-        console.error('error!');
+        console.error(error.message);
       } else {
         console.error(error.message);
       }
