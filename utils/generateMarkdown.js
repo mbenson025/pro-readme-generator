@@ -1,27 +1,25 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-function renderLicenseBadge() {
-  // if (answers.license === MIT) {
-  //   `![license-badge](https://img.shields.io/badge/license-MIT-blue)`;
-  // }
-  // if (answers.license === Apache) {
-  //   `![license-badge](https://img.shields.io/badge/license-Apache--2.0-green)`;
-  // }
-}
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseLink(license) {
+  if (license === 'MIT') {
+    licenseLink = `[MIT](https://opensource.org/licenses/MIT)`;
+  }
+  if (license === 'GPLv3') {
+    licenseLink = `[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+  }
+  if (license === 'Apache-2.0') {
+    licenseLink = `[Apache-2.0](https://opensource.org/licenses/Apache-2.0)`;
+  }
+  if (license === 'ISC') {
+    licenseLink = `[ISC](https://opensource.org/licenses/ISC)`;
+  }
+}
 
 function generateMarkdown(answers) {
-  renderLicenseLink();
+  renderLicenseLink(answers.license);
+  console.log(licenseLink);
   return `# ${answers.title} 
-  ![license-badge](https://img.shields.io/badge/license-${answers.license}-blue);
+  ![license-badge](https://img.shields.io/badge/license-${answers.license}-blue)
 
   ## Table of Contents
   - [Description](#description)
@@ -52,7 +50,7 @@ function generateMarkdown(answers) {
 
   Copyright (c) 2022 ${answers.username}
 
-  Licensed under the [${answers.license}](LICENSE) license.
+  Licensed under the ${licenseLink} License.
 
   ## Contact
  * GitHub Profile - https://github.com/${answers.username}

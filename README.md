@@ -1,16 +1,13 @@
 # Pro README.md Generator
 
-![GitHub](https://img.shields.io/github/license/mbenson025/pro-readme-generator) |
-![GitHub language count](https://img.shields.io/github/languages/count/mbenson025/pro-readme-generator) |
-![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/pro-readme-generator) |
+![GitHub](https://img.shields.io/github/license/mbenson025/pro-readme-generator)
+![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/pro-readme-generator)
 
 ## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing-Guidelines](#contributing-guidelines)
-- [Tests](#tests)
 - [License](#license)
 
 ## Description
@@ -23,9 +20,7 @@ Clone Github repo to device. Install node.js and download the inquirer package d
 
 ## Usage
 
-## Contributing Guidelines
-
-## Tests
+Open node and run index.js. Questions will display in your terminal that you can answer to build your readme file.
 
 ## License
 
