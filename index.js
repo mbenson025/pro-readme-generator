@@ -44,19 +44,16 @@ const questions = [
     type: 'input',
     name: 'description',
     message: 'Provide a description for your project',
-    default: 'description tbd',
   },
   {
     type: 'input',
     name: 'installation',
     message: 'List the steps required to install your application',
-    default: 'installation process tbd',
   },
   {
     type: 'input',
     name: 'usage',
     message: 'How is your app used? Provide instructions',
-    default: 'Usage instructions tbd',
   },
   {
     type: 'list',

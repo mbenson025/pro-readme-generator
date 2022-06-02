@@ -9,10 +9,15 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Questions](#questions)
 
 ## Description
 
 This application prompts the user with a series of questions in order to generate a professional README.md file for their projects.
+
+[Full Video Demo](https://drive.google.com/file/d/1GIywV49-sWP_ir0oDt-CNhPRw9tTG9KB/view)
+
+<img src="assets/img/readmegen.gif" alt="gif of app demonstration" title="App Demo">
 
 ## Installation
 
@@ -29,3 +34,10 @@ MIT License
 Copyright (c) 2022 Mason Benson
 
 Licensed under the [MIT](LICENSE) license.
+
+## Questions
+
+Contact me:
+
+- [GitHub-Profile](https://github.com/mbenson025)
+- Email me at mbenson025@gmail.com

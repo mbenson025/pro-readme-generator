@@ -28,7 +28,7 @@ function generateMarkdown(answers) {
   - [Contributing-Guidelines](#contributing-guidelines)
   - [Tests](#tests)
   - [License](#license)
-  - [Contact](#contact)
+  - [Questions](#questions)
 
   ## Description
   ${answers.description}
@@ -52,9 +52,9 @@ function generateMarkdown(answers) {
 
   Licensed under the ${licenseLink} License.
 
-  ## Contact
+  ## Questions
  * GitHub Profile - https://github.com/${answers.username}
- * Email - ${answers.email}
+ * Email me at ${answers.email}
   
 
 `;
