@@ -7,7 +7,7 @@ function renderLicenseLink(license) {
   if (license === 'GPLv3') {
     licenseLink = `[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
   }
-  if (license === 'Apache-2.0') {
+  if (license === 'Apache--2.0') {
     licenseLink = `[Apache-2.0](https://opensource.org/licenses/Apache-2.0)`;
   }
   if (license === 'ISC') {
