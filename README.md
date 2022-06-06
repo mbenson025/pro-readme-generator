@@ -38,13 +38,7 @@ Licensed under the [MIT](LICENSE) license.
 
 ## Questions
 
-Contact me:
+Contact me here:
 
 - [GitHub Profile](https://github.com/mbenson025)
 - Email me at mbenson025@gmail.com
-
-<br>
-<br>
-<br>
-
-![GitHub search hit counter](https://img.shields.io/github/search/mbenson025/pro-readme-generator/goto)
