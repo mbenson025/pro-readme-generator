@@ -1,39 +1,43 @@
-# TestProject22 
-  ![license-badge](https://img.shields.io/badge/license-MIT-blue)
+# Pro README.md Generator
 
-  ## Table of Contents
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing-Guidelines](#contributing-guidelines)
-  - [Tests](#tests)
-  - [License](#license)
-  - [Questions](#questions)
+![GitHub](https://img.shields.io/github/license/mbenson025/pro-readme-generator)
+![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/pro-readme-generator)
 
-  ## Description
-  Description for project sample..
+## Table of Contents
 
-  ## Installation
-  installation steps...
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
 
-  ## Usage
-  instructions for usage here..
+## Description
 
-  ## Contributing Guidelines
-  contribution info here
+This application prompts the user with a series of questions in order to generate a professional README.md file for their projects.
 
-  ## Tests
-  tests run here
+[Full Video Demo](https://drive.google.com/file/d/1GIywV49-sWP_ir0oDt-CNhPRw9tTG9KB/view)
 
-  ## License
-  MIT License
+<img src="assets/img/readmegen.gif" alt="gif of app demonstration" title="App Demo">
 
-  Copyright (c) 2022 githubuser123
+## Installation
 
-  Licensed under the [MIT](https://opensource.org/licenses/MIT) License.
+Clone Github repo to device. Install node.js and download the inquirer package dependency.
 
-  ## Questions
- * GitHub Profile - https://github.com/githubuser123
- * Email me at user123@gmail.com
-  
+## Usage
 
+Open node and run index.js. Questions will display in your terminal that you can answer to build your readme file.
+
+## License
+
+MIT License
+
+Copyright (c) 2022 Mason Benson
+
+Licensed under the [MIT](LICENSE) license.
+
+## Questions
+
+Contact me:
+
+- [GitHub-Profile](https://github.com/mbenson025)
+- Email me at mbenson025@gmail.com

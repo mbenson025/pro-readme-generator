@@ -1,6 +1,7 @@
 # Pro README.md Generator
 
 ![GitHub](https://img.shields.io/github/license/mbenson025/pro-readme-generator)
+![GitHub language count](https://img.shields.io/github/languages/count/mbenson025/pro-readme-generator)
 ![GitHub top language](https://img.shields.io/github/languages/top/mbenson025/pro-readme-generator)
 
 ## Table of Contents
@@ -39,5 +40,11 @@ Licensed under the [MIT](LICENSE) license.
 
 Contact me:
 
-- [GitHub-Profile](https://github.com/mbenson025)
+- [GitHub Profile](https://github.com/mbenson025)
 - Email me at mbenson025@gmail.com
+
+<br>
+<br>
+<br>
+
+![GitHub search hit counter](https://img.shields.io/github/search/mbenson025/pro-readme-generator/goto)
